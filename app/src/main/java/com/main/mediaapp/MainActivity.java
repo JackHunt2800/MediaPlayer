@@ -22,9 +22,10 @@ public class MainActivity extends AppCompatActivity {
         btnStart=findViewById(R.id.btn_start);
         btnStop=findViewById(R.id.btn_stop);
 
-        MediaPlayer player= MediaPlayer.create(this, Settings.System.DEFAULT_NOTIFICATION_URI);
+        //cut and paste it in the onStart method in Myservices class to run in the background
+        /*MediaPlayer player= MediaPlayer.create(this, Settings.System.DEFAULT_NOTIFICATION_URI);
         player.setLooping(true);
-        player.start();
+        player.start();*/
 
         btnStart.setOnClickListener(new View.OnClickListener(){
             public void onClick(View view){
